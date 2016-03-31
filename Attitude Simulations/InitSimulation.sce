@@ -8,7 +8,10 @@
 payloadPosition_IC = 0;
 payloadVelocity_IC = 0;
 
+balloonPosition_IC = 0;
+balloonVelocity_IC = 0;
+
 J_payload = 1;
-J_balloon = 10;
-ct = 0.01;
+J_balloon = 0.5;
+ct = 0.1;
 kt = 0.2;
