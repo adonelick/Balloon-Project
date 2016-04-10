@@ -10,12 +10,19 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Generate Command String.vi" Type="VI" URL="../Generate Command String.vi"/>
-		<Item Name="Generate Packet Log Filename.vi" Type="VI" URL="../Generate Packet Log Filename.vi"/>
-		<Item Name="Hexadecimal to Image.vi" Type="VI" URL="../Hexadecimal to Image.vi"/>
+		<Item Name="Controls" Type="Folder">
+			<Item Name="Intrument References.ctl" Type="VI" URL="../Intrument References.ctl"/>
+			<Item Name="Payload Status.ctl" Type="VI" URL="../Payload Status.ctl"/>
+		</Item>
+		<Item Name="Helper VIs" Type="Folder">
+			<Item Name="Generate Command String.vi" Type="VI" URL="../Generate Command String.vi"/>
+			<Item Name="Generate Packet Log Filename.vi" Type="VI" URL="../Generate Packet Log Filename.vi"/>
+			<Item Name="Hexadecimal to Image.vi" Type="VI" URL="../Hexadecimal to Image.vi"/>
+			<Item Name="Packet Strings to Values.vi" Type="VI" URL="../Packet Strings to Values.vi"/>
+			<Item Name="Save KML File.vi" Type="VI" URL="../Save KML File.vi"/>
+			<Item Name="Update Front Panel Instruments.vi" Type="VI" URL="../Update Front Panel Instruments.vi"/>
+		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="Packet Strings to Values.vi" Type="VI" URL="../Packet Strings to Values.vi"/>
-		<Item Name="Save KML File.vi" Type="VI" URL="../Save KML File.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
