@@ -18,17 +18,17 @@ KML_FILE_LOCATION = "C:\Users\Andrew\Documents\Balloon\KML Logs"
 POSITION = "position"
 INTERIOR_TEMP = "interiorTemp"
 MEASUREMENTS = {
-    "interiorTemp" : ("Interior Temperature", "°C", 1),
-    "heaterTemp" : ("Heater Temperature", "°C", 5),
-    "exteriorTemp" : ("Exterior Temperature", "°C", 7),
+    "interiorTemp" : ("Interior Temperature", "Degrees C", 1),
+    "heaterTemp" : ("Heater Temperature", "Degrees C", 5),
+    "exteriorTemp" : ("Exterior Temperature", "Degrees C", 7),
     "pressure" : ("Atmospheric Pressure", "PSI", 9),
     "humidity" : ("Relative Humidity", "%", 11),
     "altitude" : ("Altitude", "m", 13),
-    "pitch" : ("Pitch", "°", 15),
-    "roll" : ("Roll", "°", 17),
-    "yaw" : ("Yaw", "°", 19),
-    "latitude" : ("Latitude", "°", 27),
-    "longitude" : ("Longitude", "°", 29)
+    "pitch" : ("Pitch", "Degrees", 15),
+    "roll" : ("Roll", "Degrees", 17),
+    "yaw" : ("Yaw", "Degrees", 19),
+    "latitude" : ("Latitude", "Degrees", 27),
+    "longitude" : ("Longitude", "Degrees", 29)
 }
 
 
@@ -77,7 +77,7 @@ def main(filename, measurement):
 
             plt.plot(x1, y1, label="Interior Temperature 1")
             plt.plot(x2, y2, label="Interior Temperature 2")
-
+            plt.legend()
 
         else:
             measurementTitle = MEASUREMENTS[measurement][0]
