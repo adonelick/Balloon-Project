@@ -28,6 +28,7 @@ def main(directory):
     combinedData = None
     files = os.listdir(directory)
     files.sort()
+    lastTime = 0
 
     for filename in files:
 
@@ -39,8 +40,9 @@ def main(directory):
         data = np.zeros(rawData.shape, np.float32)
 
         # Convert the time entries from milliseconds to seconds
+        # Add on the last recorded time from the last data file
         for i in xrange(NUM_ENTRIES):
-            data[:,2*i] = rawData[:,2*i] / 1000.0
+            data[:,2*i] = (rawData[:,2*i] / 1000.0) + lastTime
 
         # Convert the temperature readings to degrees C
         data[:,1] = (rawData[:,1]).astype(np.int16) / 100.0
@@ -80,6 +82,8 @@ def main(directory):
             combinedData = data
         else:
             combinedData = np.append(combinedData, data, axis=0)
+
+        lastTime = combinedData[-1, 2*(NUM_ENTRIES - 1)]
 
     newFilename = "ProcessedData.csv"
     np.savetxt(newFilename, combinedData, delimiter=',')
