@@ -1,0 +1,5 @@
+Interior Temperature 1, Interior Temperature 2, Exterior Temperature, Pressure, Humidity, GPS Time, Altitude, Ascent Rate, Latitude, Longitude, GPS Validity, GPS Sentences, Failed GPS Sentences, Number of GPS Satellites, Acceleration (x), Acceleration (y), Acceleration (z), Rotation Rate (x), Rotation Rate (y), Rotation Rate (z), Magnetic Field (x), Magnetic Field (y), Magnetic Field (z), Pitch, Roll, Yaw, Time Since Reset, Data Logging Status, Data Filename, Data Age, Relay States
+32.0, 32.0, 32.0, 0.0, 0, -1 day, 17:00:00, 0.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, DATA000.CSV, 0.0, (False, False, False, False)
+32.0, 32.0, 32.0, 0.0, 0, -1 day, 17:00:00, 0.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, DATA000.CSV, 0.0, (False, False, False, False)
+32.0, 32.0, 32.0, 0.0, 0, -1 day, 17:00:00, 0.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, DATA000.CSV, 0.0, (False, False, False, False)
+32.0, 32.0, 32.0, 0.0, 0, -1 day, 17:00:00, 0.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, DATA000.CSV, 0.0, (False, False, False, False)

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+    <name>vehicle_position_2019_0902_14.kml</name>
+    <open>1</open>
+    <Style id="t17097580">
+        <IconStyle>
+            <scale>0.75</scale>
+            <Icon>
+                <href>p4fp4f_3.png</href>
+            </Icon>
+        </IconStyle>
+        <LabelStyle>
+            <color>ffa8ff00</color>
+            <scale>0.75</scale>
+        </LabelStyle>
+        <LineStyle>
+            <color>ff00ff00</color>
+            <width>2</width>
+        </LineStyle>
+        <PolyStyle>
+            <color>7f00ff00</color>
+        </PolyStyle>
+    </Style>
+    <Placemark>
+        <name>KF7YUR</name>
+        <styleUrl>#t17097580</styleUrl>
+        <gx:balloonVisibility>1</gx:balloonVisibility>
+        <MultiGeometry>
+            <Point>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                </coordinates>
+            </Point>
+            <LineString>
+                <extrude>1</extrude>
+                <tessellate>1</tessellate>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                </coordinates>
+            </LineString>
+        </MultiGeometry>
+    </Placemark>
+</Document>
+</kml>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+    <name>balloon_position_1_2019_0902_13.kml</name>
+    <open>1</open>
+    <Style id="t17097580">
+        <IconStyle>
+            <scale>0.75</scale>
+            <Icon>
+                <href>p4fp4f_3.png</href>
+            </Icon>
+        </IconStyle>
+        <LabelStyle>
+            <color>ffa8ff00</color>
+            <scale>0.75</scale>
+        </LabelStyle>
+        <LineStyle>
+            <color>ff00ff00</color>
+            <width>2</width>
+        </LineStyle>
+        <PolyStyle>
+            <color>7f00ff00</color>
+        </PolyStyle>
+    </Style>
+    <Placemark>
+        <name>KF7YUR</name>
+        <styleUrl>#t17097580</styleUrl>
+        <gx:balloonVisibility>1</gx:balloonVisibility>
+        <MultiGeometry>
+            <Point>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>-104.77848,37.6258767,1893.7</coordinates>
+            </Point>
+            <LineString>
+                <extrude>1</extrude>
+                <tessellate>1</tessellate>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    -104.7784783,37.6258,1893.0000000000002
+                    -104.7784817,37.6258183,1893.0000000000002
+                    -104.7784867,37.6258283,1895.7000000000003
+                    -104.7784833,37.6258433,1896.2
+                    -104.77848,37.6258433,1897.1000000000001
+                    -104.7784833,37.625845,1896.8
+                    -104.7784683,37.6258567,1896.5000000000002
+                    -104.77846,37.625865,1895.7000000000003
+                    -104.7784767,37.625855,1895.0000000000002
+                    -104.778475,37.625855,1895.1000000000001
+                    -104.77848,37.6258583,1895.4
+                    -104.77848,37.6258583,1895.4
+                    -104.7784783,37.62586,1895.3000000000002
+                    -104.7784783,37.6258617,1895.3000000000002
+                    -104.7784783,37.6258633,1895.2
+                    -104.7784783,37.625865,1895.0000000000002
+                    -104.77848,37.6258767,1893.7
+                </coordinates>
+            </LineString>
+        </MultiGeometry>
+    </Placemark>
+</Document>
+</kml>

@@ -1,0 +1,261 @@
+#:kivy 1.0
+
+
+<GroundStation>:
+
+    padding: 10
+    spacing: 10
+    cols: 2
+
+    GridLayout:
+        spacing: 10
+        rows: 2
+
+        GridLayout:
+            spacing: 10
+            cols: 2
+
+            GridLayout:
+                spacing: 10
+                cols: 1
+
+                Label:
+                    size_hint: 1, None
+                    height: 50
+                    font_size: "24sp"
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    text: "Payload GPS 1"
+
+                GridLayout:
+                    spacing: 10
+                    cols: 2
+
+                    Label:
+                        text: "Latitude:"
+                    Label:
+                        text: root.kv_GPS1_latitude
+
+                    Label:
+                        text: "Longitude:"
+                    Label:
+                        text: root.kv_GPS1_longitude
+
+                    Label:
+                        text: "Altitude [ft]:"
+                    Label:
+                        text: root.kv_GPS1_altitude
+
+                    Label:
+                        text: "Time:"
+                    Label:
+                        text: root.kv_GPS1_time
+
+                Label:
+                    size_hint: 1, None
+                    height: 50
+                    font_size: "24sp"
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    text: "Payload GPS 2"
+
+                GridLayout:
+                    spacing: 10
+                    cols: 2
+
+                    Label:
+                        text: "Latitude:"
+                    Label:
+                        text: root.kv_GPS2_latitude
+
+                    Label:
+                        text: "Longitude:"
+                    Label:
+                        text: root.kv_GPS2_longitude
+
+                    Label:
+                        text: "Altitude [ft]:"
+                    Label:
+                        text: root.kv_GPS2_altitude
+
+                    Label:
+                        text: "Time:"
+                    Label:
+                        text: root.kv_GPS2_time
+
+
+                Label:
+                    size_hint: 1, None
+                    height: 50
+                    font_size: "24sp"
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    text: "Tracking Vehicle GPS"
+
+                GridLayout:
+                    spacing: 10
+                    cols: 2
+
+                    Label:
+                        text: "Latitude:"
+                    Label:
+                        text: root.kv_GPS3_latitude
+
+                    Label:
+                        text: "Longitude:"
+                    Label:
+                        text: root.kv_GPS3_longitude
+
+                    Label:
+                        text: "Altitude [ft]:"
+                    Label:
+                        text: root.kv_GPS3_altitude
+
+                    Label:
+                        text: "Time:"
+                    Label:
+                        text: root.kv_GPS3_time
+
+            GridLayout:
+                spacing: 10
+                cols: 1
+
+                Label:
+                    size_hint: 1, None
+                    height: 50
+                    font_size: "24sp"
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    text: "Payload Data Stream"
+
+                GridLayout:
+                    spacing: 10
+                    cols: 2
+
+                    Label:
+                        text: "Interior Temperature 1: "
+                    Label:
+                        text: root.kv_interior_temp_1
+
+                    Label:
+                        text: "Interior Temperature 2: "
+                    Label:
+                        text: root.kv_interior_temp_2
+
+                    Label:
+                        text: "Interior Temperature 3: "
+                    Label:
+                        text: root.kv_interior_temp_3
+
+                    Label:
+                        text: "Exterior Temperature: "
+                    Label:
+                        text: root.kv_exterior_temp
+
+                    Label:
+                        text: "Pressure [PSIA]: "
+                    Label:
+                        text: root.kv_pressure
+
+                    Label:
+                        text: "Humidity [%]: "
+                    Label:
+                        text: root.kv_humidity
+
+                    Label:
+                        text: "Data Logging: "
+                    Label:
+                        text: "ON"
+
+                    Label:
+                        text: "Data File Name: "
+                    Label:
+                        text: "DATA000.csv"
+
+                    Label:
+                        text: "Data Age:"
+                    Label:
+                        text: ""
+
+                    Label:
+                        text: "Computer Clock:"
+                    Label:
+                        text: ""
+
+        GridLayout:
+            spacing: 10
+            rows: 1
+            size_hint: 1, 0.1
+
+            ToggleButton:
+                id: relay_toggle_1
+                text: "Relay 1"
+            ToggleButton:
+                id: relay_toggle_2
+                text: "Relay 2"
+            ToggleButton:
+                id: relay_toggle_3
+                text: "Relay 3"
+            ToggleButton:
+                id: relay_toggle_4
+                text: "Relay 4"
+
+
+    GridLayout:
+        spacing: 10
+        cols: 1
+        size_hint: 0.3, 1 
+
+        Label:
+            size_hint: 1, None
+            height: 50
+            font_size: "24sp"
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+            text: "Serial Port Settings"
+
+        GridLayout:
+            spacing: 10
+            cols: 2
+
+            Label:
+                text: "Radio COM Port: "
+            TextInput:
+                id: radio_COM_port
+
+            Label:
+                text: "GPS COM Port: "
+            TextInput:
+                id: GPS_COM_port
+
+        Button:
+            text: "Connect to Radio"
+            on_press: root.connect_to_radio()
+
+        Button:
+            text: "Connect to GPS"
+            on_press: root.connect_to_GPS()
+
+
+        Label:
+            size_hint: 1, None
+            height: 50
+            font_size: "24sp"
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+            text: "Radio Commands"
+
+        Button:
+            text: "Payload Cutdown"
+            on_press: pass
+
+        Button:
+            text: "Set Relays"
+            on_press: pass
+
