@@ -29,13 +29,15 @@
         <MultiGeometry>
             <Point>
                 <altitudeMode>absolute</altitudeMode>
-                <coordinates></coordinates>
+                <coordinates>
+                </coordinates>
             </Point>
             <LineString>
                 <extrude>1</extrude>
                 <tessellate>1</tessellate>
                 <altitudeMode>absolute</altitudeMode>
-                <coordinates></coordinates>
+                <coordinates>
+                </coordinates>
             </LineString>
         </MultiGeometry>
     </Placemark>
